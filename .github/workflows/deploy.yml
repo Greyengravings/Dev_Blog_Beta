@@ -31,7 +31,7 @@ jobs:
         run: npm ci
 
       - name: Build
-        run: npm run build
+        run: cp index.source.html index.html && npm run build
         env:
           VITE_GOOGLE_SHEET_ENDPOINT: ${{ secrets.VITE_GOOGLE_SHEET_ENDPOINT }}
 
