@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 
-const endpoint = import.meta.env.VITE_GOOGLE_SHEET_ENDPOINT
+const endpoint = import.meta.env.VITE_GOOGLE_SHEET_ENDPOINT || 'https://script.google.com/macros/s/AKfycbwNEGKfVrm-aJtQAkrOydiXrscHA8DuCSO8n7itpnWHrur1-fuOVBa3TLfkj_LjTHdV/exec'
 const testAreas = [
   { id: 'ui', label: 'Interface & UI', note: 'Visual polish, navigation, accessibility' },
   { id: 'speed', label: 'Speed', note: 'Load times, interactions, responsiveness' },
