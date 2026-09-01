@@ -57,3 +57,7 @@ npm run dev
 ```
 
 The form uses a URL-encoded `POST` request, which works with the Apps Script web-app endpoint without exposing Google credentials in the frontend.
+
+## GitHub Pages
+
+The Vite base path is configured for `https://greyengravings.github.io/Dev_Blog_Beta/`. The workflow in `.github/workflows/deploy.yml` deploys automatically after pushes to `main`. In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**. Add the Apps Script URL as the repository secret `VITE_GOOGLE_SHEET_ENDPOINT` so production submissions reach the sheet.
